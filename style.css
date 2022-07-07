@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+/*styling the header*/
+.header{
+    padding:0 40px;
+    top: 0; right: 0; left: 0;
+    position:fixed;
+    display: flex;
+    justify-content:space-between;
+    font-size: 18px;
+    background: black;
+    height: 60px;
+    color: white;
+}
+/* styling the social media text */
+h2 .socialmedia{
+    font-size: 20px;
+    padding-left: 30px;
+}
+h2 b{
+    color:#84ffc9;
+    padding-left: 5px;
+
+} 
+/* styling the font awesome bar on the header */
+ #navbtn:hover{
+    color:#84ffc9;
+
+
+}
+  #navbtn{ 
+    margin-left:30px;
+    font-size: 20px;
+    transition: 500ms color;
+    cursor: pointer;
+}
+/* styling to ensure that onclicking bar the sidebar moves */
+ #checkbox{
+     display: none;
+
+}
+#checkbox:checked ~ .body .sidebar{
+    width: 100px;
+  
+}
+/* styling the nav bar on the header */
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.521);
+}
+    
+    .navbar ul li {
+   float: left;
+    }
+    
+    .navbar ul li a {
+ 
+        display: block;
+        color: #84ffc9;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+.navbar ul li a:hover{
+    color:gold;
+}
+.navbar ul li a:focus{
+    color: red;
+}
+
+.body{
+    display: flex;
+}
+/*styling the side navbar  */
+ .sidebar{
+    width: 150px;
+    background:#fdfbfb ;
+    min-height: 100vh;
+    transition: 500ms width;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+ }.sidebar ul{
+     list-style-type: none;
+     margin-top: 50px;
+ }
+ .sidebar ul li{
+     text-decoration: none;
+     font-size: 50px;
+     margin-top: 30px;
+     padding-left: 20px;
+     padding: 30px 0;
+     transition: 500ms background;
+
+ }
+ .sidebar ul li:hover{
+     background:#84ffc9;
+
+ }
+
+ .sidebar ul li a {
+     text-decoration: none;
+     cursor: pointer;
+ }
+ /* styling the instagram icon with id"insta" */
+ .instagram {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+  /* styling the entire body using grid */
+  .thebody{
+      display: grid;
+      width: 100%;
+      grid-template-rows: 1fr 1fr 1fr ;
+      grid-template-columns:  1fr 1fr  ;
+      grid-template-areas: " home home"      
+                           " aboutme aboutme"
+                            "myservices contact";
+  }
+  /* styling the home page */
+  #home{
+    grid-area: home;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+/* styling the text in the home page */
+.name{
+    font-size: 60px;
+    color: #84ffc9;
+    transition:ease-in 500ms;
+}
+.name b{
+     color: #fdfbfb;
+}
+.u-name{
+  font-size: 30px;
+  color: #84ffc9;
+  font-style: inherit;
+}
+.u-name b{
+  font-weight: bolder;
+  font-size:50px;
+  font-family:inherit;
+}
+/* this is styling for the about me page */
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+grid-area: aboutme;
+  background: #fff;
+}
+#aboutme p {
+text-align: center;
+font-size: 30px;
+font-weight: bolder;
+font-style: inherit;
+}
+/* in the about me page, this is styling for the boxes using css grid */
+.gridcontainer{
+    display: flex;
+    flex-direction:row;
+    height: auto;
+    justify-content: space-around;
+}
+.gridcontainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    height: 20rem;
+    width: 20rem;
+    background-color:#84ffc9;
+    
+    
+}
+.gridcontainer div h2{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 10px;
+    
+}
+.gridcontainer div p{
+text-align: center;
+}
+/* styling for myservices page */
+#myservices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: myservices;
+    background:gainsboro;
+}
+/* styling for contact page */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: contact;
+    background: gainsboro;
+}
