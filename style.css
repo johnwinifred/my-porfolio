@@ -1,4 +1,5 @@
 body{
+    
     margin: 0;
     padding: 0;
     font-family:'Times New Roman', Times, serif;
@@ -103,9 +104,7 @@ h2 b{
  }
  .sidebar ul li:hover{
      background:#84ffc9;
-
  }
-
  .sidebar ul li a {
      text-decoration: none;
      cursor: pointer;
@@ -129,37 +128,151 @@ h2 b{
   .thebody{
       display: grid;
       width: 100%;
-      grid-template-rows: 1fr 1fr 1fr ;
-      grid-template-columns:  1fr 1fr  ;
+      grid-template-rows: 2fr 2fr 2fr 0.2fr 0.1fr;
+      grid-template-columns:  1fr  ;
       grid-template-areas: " home home"      
                            " aboutme aboutme"
-                            "myservices contact";
+                            "myservices myservices"
+                            "contact contact"
+                            " space space";
   }
   /* styling the home page */
   #home{
     grid-area: home;
-    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-  
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .img{
+    /* animation to img */
+    -moz-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+     transform: translateY(50%);
+     -moz-animation: vertically 7s linear infinite alternate;
+     -webkit-animation: vertically 7s linear infinite alternate;
+     animation: vertically 7s linear infinite alternate;
+     }
+     /* to move the animation */
+     @keyframes vertically{
+         0%{
+             -moz-transform: translateY(50%);
+             -webkit-transform: translateY(50%);
+             transform: translateY(50%);
+         }
+         100%{
+             -moz-transform: translateY(-50%);
+             -webkit-transform: translateY(-50%);
+             transform: translateY(-50%);
+         }
+   
+     }
+     .img2{
+        /* animation to img */
+        -moz-transform: translateY(80%);
+        -webkit-transform: translateY(80%);
+         transform: translateY(80%);
+         -moz-animation: vertically 8s linear infinite alternate;
+         -webkit-animation: vertically 8s linear infinite alternate;
+         animation: vertically 8s linear infinite alternate;
+         }
+         /* to move the animation */
+         @keyframes vertically{
+             0%{
+                 -moz-transform: translateY(80%);
+                 -webkit-transform: translateY(80%);
+                 transform: translateY(80%);
+             }
+             100%{
+                 -moz-transform: translateY(-80%);
+                 -webkit-transform: translateY(-80%);
+                 transform: translateY(-80%);
+             }
+       
+         }
+
+#home .userp{
+margin-top: 50px;
+    width: 150px;
+    min-height: 60px;
+    border-radius: 50%;
 }
+/* to style the text animation */
+h1 .name{    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+
+}
+
+div .transition {
+  width:0px;
+  animation: slidein 15s infinite;
+}
+
+div .transition span {
+  margin-left:-355px;
+  animation: slidein 15s infinite;
+}
+
+@keyframes showup { 
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+    
+}
+
+
+ 
 /* styling the text in the home page */
 .name{
     font-size: 60px;
     color: #84ffc9;
     transition:ease-in 500ms;
+    -moz-transition:ease-in 500ms ;
+    -webkit-transition: ease-in 500ms;
 }
 .name b{
-     color: #fdfbfb;
+     color: rgba(0, 0, 0, 0.719);
 }
 .u-name{
   font-size: 30px;
   color: #84ffc9;
   font-style: inherit;
-}
+  /* to animate the text */
+  -moz-transform: translateY(50%);
+ -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  -moz-animation: vertically 7s linear infinite alternate;
+  -webkit-animation: vertically 7s linear infinite alternate;
+  animation: vertically 7s linear infinite alternate;
+  }
+  /* to move the animation */
+  @keyframes vertically{
+      0%{
+          -moz-transform: translateY(50%);
+          -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+      }
+      100%{
+          -moz-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
+
+  }
+
 .u-name b{
   font-weight: bolder;
   font-size:50px;
@@ -171,13 +284,43 @@ h2 b{
     flex-direction: column;
     padding-top: 10px;
 grid-area: aboutme;
-  background: #fff;
+background-image: linear-gradient(to right bottom, #000000, #383838, #707070, #adadad, #eeeeee);
+
 }
-#aboutme p {
+#aboutme h1 {
+    display: inline-block;
 text-align: center;
 font-size: 30px;
 font-weight: bolder;
-font-style: inherit;
+font-family: 'Times New Roman', Times, serif;
+color:#84ffc9;
+/* to animate the text */
+-moz-transform: translateY(50%);
+-webkit-transform: translateY(50%);
+ transform: translateY(50%);
+ -moz-animation: vertically 7s linear infinite alternate;
+ -webkit-animation: vertically 7s linear infinite alternate;
+ animation: vertically 7s linear infinite alternate;
+ }
+ /* to move the animation */
+ @keyframes vertically{
+     0%{
+         -moz-transform: translateY(50%);
+         -webkit-transform: translateY(50%);
+         transform: translateY(50%);
+     }
+     100%{
+         -moz-transform: translateY(-50%);
+         -webkit-transform: translateY(-50%);
+         transform: translateY(-50%);
+     }
+
+ }
+#aboutme p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.884);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 /* in the about me page, this is styling for the boxes using css grid */
 .gridcontainer{
@@ -186,7 +329,7 @@ font-style: inherit;
     height: auto;
     justify-content: space-around;
 }
-.gridcontainer div {
+.gridcontainer div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,28 +338,98 @@ font-style: inherit;
     height: 20rem;
     width: 20rem;
     background-color:#84ffc9;
-    
+    transition: transform 0.8s;
+    -moz-transition: transform 0.8s;
+    -webkit-transition: transform 0.8s;
+    background-color:#e9e5e5;
+    border-radius:20px;
+    box-shadow:12px 12px 24px #84ffc9, 4px 4px 0px #fff;
+    top:24px 12px 12px #84ffc9, 4px 4px 0px #fff;
     
 }
-.gridcontainer div h2{
+.gridcontainer div:hover{
+transform: rotateY(80deg);
+
+
+}
+.gridcontainer div img{
     display: inline-block;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    padding: 10px 10px;
-    
+   height: 150px;
+   width:150px;
 }
 .gridcontainer div p{
 text-align: center;
+
 }
 /* styling for myservices page */
 #myservices{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     grid-area: myservices;
-    background:gainsboro;
+    background: url(myservices.gif);
+    background-position: left top;
+    background-repeat: no-repeat;
+    
+
+}
+/* styling for the heading on myservices page */
+#myservices p{
+    font-size: 30px;font-weight: bolder;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: 5px solid rgba(153, 147, 147, 0.692);
+    border-radius: 15px;
+    box-shadow:12px 12px 24px #84ffc9, 4px 4px 0px #fff;
+   
+}
+/* styling for the content in myservices */
+#myservices .content{
+    display: inline-flexbox;
+    width: fit-content;
+    height: auto;
+    flex-direction:column ;
+    margin-left: 9rem;
+    margin-top: 7rem;
+    justify-content: space-between;
+    color: white;
+    /* adding animation to the content */
+   transition:width  5s;
+   -moz-transition: width 5s;
+   -webkit-transition: width 5s;
+}
+#myservices .content:hover{
+    width:70%;
+}
+/* styling each content in my services page */
+.content h2{
+    background:#cfcccc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px;
+    border: 5px solid #e9e5e5;
+    border-radius: 15px;
+    
+}
+.content h3{
+    background:black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px;
+    border: 5px solid rgba(153, 147, 147, 0.692);
+    border-radius: 15px;
+}
+.content h4{
+    background:#8ef5c8;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px;
+    border: 5px solid #84ffc9;
+    border-radius: 15px;
 }
 /* styling for contact page */
 #contact{
@@ -225,5 +438,40 @@ text-align: center;
     align-items: center;
     justify-content: center;
     grid-area: contact;
-    background: gainsboro;
+    background-image: linear-gradient(to bottom, #8bfbf2, #76c9c4, #629997, #4e6c6c, #394242);
+
+
+}
+#contact p{
+    font-size: 30px;
+    font-weight: bolder;
+    color:white ;
+    font-family: 'Times New Roman', Times, serif;
+    background: black;
+    padding: 15px;
+    border: 5px solid rgba(153, 147, 147, 0.692);
+    border-radius: 15px;
+    box-shadow:12px 12px 24px #84ffc9, 4px 4px 0px #fff;
+}
+#contact a{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#contact a:hover{
+    background:#84ffc9;
+}
+#contact a i{
+    padding-left: 10px;
+    letter-spacing: 15px;
+    font-size: 50px;
+
+}
+#contact a b{
+    color: #fff;
+    font-size: 20px;
+}
+#space{
+    grid-area: space;
+    background: rgba(0, 0, 0, 0.842);
 }
