@@ -145,6 +145,7 @@ h2 b{
     justify-content: center;
     overflow: hidden;
     white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.863);
   }
   .img{
     /* animation to img */
@@ -238,7 +239,7 @@ div .transition span {
 /* styling the text in the home page */
 .name{
     font-size: 60px;
-    color: #84ffc9;
+    color: #20c77e;
     transition:ease-in 500ms;
     -moz-transition:ease-in 500ms ;
     -webkit-transition: ease-in 500ms;
@@ -248,7 +249,7 @@ div .transition span {
 }
 .u-name{
   font-size: 30px;
-  color: #84ffc9;
+  color: #20c77e;
   font-style: inherit;
   /* to animate the text */
   -moz-transform: translateY(50%);
