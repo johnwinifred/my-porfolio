@@ -1,0 +1,39 @@
+#contact{
+    padding: 40px;
+    grid-area:contact;
+    background-color: $color2;
+    .contactwrap{
+        width: 100%;
+        @include flex();
+        .note
+        {
+            .foot{
+                @include flex();
+                h3{
+                    padding-left: 20px;
+                }  
+            }
+        }
+    .info{
+        width: 25%;
+        .navbar{
+            @include nav();
+            nav{
+                ul{
+                  @include flex2();
+                  display: block;
+                }
+            }
+        }
+        .foot2{
+            display: flex; 
+            flex-direction: row;
+            li{
+                a{
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    }
+}

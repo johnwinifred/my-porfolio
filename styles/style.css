@@ -1,0 +1,476 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap");
+* {
+  box-sizing: border-box;
+}
+* body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "PT Sans";
+  font-size: 0.98rem;
+  color: #D9D9D9;
+}
+
+h1,
+h2 {
+  font-weight: 60;
+  color: #fff;
+}
+
+b {
+  font-weight: 60;
+  color: #D9D9D9;
+}
+
+p {
+  font-size: 0.98rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gridlayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr 1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas: "nav nav" "myservices myservices" "works works" "skills skills" "contact contact" "footer footer";
+}
+
+header {
+  grid-area: nav;
+  width: 100%;
+  margin: 0;
+  background-color: #2D2E32;
+}
+
+.nav {
+  height: 5rem;
+}
+.nav .navlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+.nav .navlist .name p {
+  float: left;
+}
+.nav .navlist .navitem {
+  display: flex;
+}
+.nav .navlist .navitem #caret {
+  color: gold;
+  display: none;
+}
+.nav .navlist .navitem .navlink {
+  color: #fff;
+  white-space: none;
+}
+.nav .navlist .navitem .navlink:hover {
+  color: gold;
+}
+.nav .navlist .navitem .navlink:hover:hover #caret {
+  display: inline-flex;
+}
+.nav .navlist .navitem .navlink:active {
+  color: red;
+}
+.nav .navlist .navitem .navlink:active:active #caret {
+  color: red;
+}
+.nav .navlist .navitem .font-awesome {
+  padding: auto;
+  font-size: 0.98rem;
+  position: relative;
+  left: 70px;
+}
+.nav .navlist .navitem .font-awesome:hover {
+  background-color: gold;
+}
+.nav .navlist .navitem .font-awesome:hover:last-child {
+  color: red;
+}
+.nav .navlist .navitem .special {
+  border: 2px solid #333438;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #333438;
+  color: gold;
+}
+
+.link {
+  color: gold;
+  text-decoration: underline;
+}
+.link:hover {
+  color: red;
+}
+
+.btntext {
+  background-color: gold;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.bigcircle {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to right bottom, #28292d, #28292d, #292a2d, #292a2e, #292a2e, #292a2e, #292a2e, #292a2e, #292a2e, #292a2d, #292a2d, #292a2c);
+  border: 2px solid #25262A;
+}
+
+.smallcircle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #25262A;
+  border: 2px solid #25262A;
+  position: absolute;
+  top: 5rem;
+}
+
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid gold;
+  position: absolute;
+  top: 25rem;
+  right: 5rem;
+  margin-left: 40px;
+  background-color: gold;
+}
+
+.css {
+  position: relative;
+  top: 0;
+  left: 20rem;
+}
+
+.js {
+  position: relative;
+  left: 10rem;
+  top: 15rem;
+}
+
+.react {
+  position: relative;
+  right: 10rem;
+  top: 10rem;
+}
+
+.userpics {
+  position: relative;
+  left: 6rem;
+  top: 0.5rem;
+  border: 2px solid gold;
+  border-radius: 50%;
+  padding: 5px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+.borderitem .frontend,
+.borderitem .documentation,
+.borderitem .seo {
+  border: 2px solid #2D2E32;
+  border-radius: 0.5rem;
+  background-color: #2D2E32;
+  margin-bottom: 20px;
+  padding: 1rem 3rem;
+}
+.borderitem h1:first-child {
+  color: gold;
+}
+
+.sm-icons {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+#myservices {
+  grid-area: myservices;
+  background-color: #2D2E32;
+}
+#myservices .gridcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
+#myservices .gridcontainer .title h1 {
+  font-size: 3rem;
+}
+#myservices .gridcontainer .title li {
+  padding-top: 50px;
+}
+#myservices .gridcontainer .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  border: 1px #D9D9D9;
+  box-shadow: inset 0 0 0 6px gold;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, #28292d, #28292d, #292a2d, #292a2e, #292a2e, #35363c, #41434a, #4e5058, #6c6f7a, #8b909e, #abb2c3, #ccd6ea);
+}
+
+#works {
+  grid-area: works;
+  background-color: #25262A;
+}
+#works .textcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+#works .textcontainer .textitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+}
+#works .textcontainer .textitem h1 {
+  font-size: 3rem;
+}
+#works .textcontainer .textitem h3:first-child {
+  margin-top: -20px;
+}
+#works .textcontainer .textitem b {
+  color: gold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#works .samplecontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+#works .samplecontainer .w1 {
+  border: 2px solid #2D2E32;
+  height: 22rem;
+  width: 22rem;
+  margin-bottom: 20px;
+}
+#works .samplecontainer .work2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#works .samplecontainer .work1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#works .samplecontainer .work1 h1 {
+  font-size: 3rem;
+}
+#works .samplecontainer .work1 a {
+  color: gold;
+}
+#works .samplecontainer .work1 a:hover {
+  color: red;
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #2D2E32;
+  grid-area: skills;
+}
+#skills .container {
+  width: 100%;
+}
+#skills .container .htmlcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+#skills .container .htmlcontainer .barcontainer {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 30px;
+}
+#skills .container .htmlcontainer .barcontainer .bar {
+  background-color: gold;
+  width: 80%;
+  border: 2px solid gold;
+  border-radius: 30px;
+}
+#skills .container .htmlcontainer .barcontainer .bar b {
+  color: black;
+  position: relative;
+  left: 50%;
+}
+#skills .container .csscontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+#skills .container .csscontainer .barcontainer2 {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 30px;
+}
+#skills .container .csscontainer .barcontainer2 .bar2 {
+  background-color: gold;
+  width: 80%;
+  border: 2px solid gold;
+  border-radius: 30px;
+}
+#skills .container .csscontainer .barcontainer2 .bar2 b {
+  color: black;
+  position: relative;
+  left: 50%;
+}
+#skills .container .jscontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: 10px;
+}
+#skills .container .jscontainer .barcontainer3 {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 30px;
+}
+#skills .container .jscontainer .barcontainer3 .bar3 {
+  background-color: gold;
+  width: 50%;
+  border: 2px solid gold;
+  border-radius: 30px;
+}
+#skills .container .jscontainer .barcontainer3 .bar3 b {
+  color: black;
+  position: relative;
+  left: 50%;
+}
+
+#contact {
+  padding: 40px;
+  grid-area: contact;
+  background-color: #25262A;
+}
+#contact .contactwrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#contact .contactwrap .note .foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#contact .contactwrap .note .foot h3 {
+  padding-left: 20px;
+}
+#contact .contactwrap .info {
+  width: 25%;
+}
+#contact .contactwrap .info .navbar .navitem {
+  display: flex;
+}
+#contact .contactwrap .info .navbar .navitem #caret {
+  color: gold;
+  display: none;
+}
+#contact .contactwrap .info .navbar .navitem .navlink {
+  color: #fff;
+  white-space: none;
+}
+#contact .contactwrap .info .navbar .navitem .navlink:hover {
+  color: gold;
+}
+#contact .contactwrap .info .navbar .navitem .navlink:hover:hover #caret {
+  display: inline-flex;
+  flex-direction: row;
+}
+#contact .contactwrap .info .navbar .navitem .navlink:active {
+  color: red;
+}
+#contact .contactwrap .info .navbar .navitem .navlink:active:active #caret {
+  color: red;
+}
+#contact .contactwrap .info .navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: block;
+}
+#contact .contactwrap .info .foot2 {
+  display: flex;
+  flex-direction: row;
+}
+#contact .contactwrap .info .foot2 li a {
+  padding: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #25262A;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .foot h6 {
+  padding-left: 20px;
+}
+.footer .foot2 {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+}
+.footer .foot2 li a {
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */

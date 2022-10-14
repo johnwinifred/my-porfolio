@@ -1,0 +1,103 @@
+*
+ {
+  box-sizing: border-box;
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: $bodyfont;
+    font-size: $normal_fontsize;
+    color: $textcolor;
+  
+  }
+}
+h1,
+h2 {
+  font-weight: $font-semi-bold;
+  color: $titlecolor;
+}
+b{
+  font-weight: $font-semi-bold;
+  color: $textcolor;
+}
+p{
+  font-size:$normal_fontsize ;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+li{
+    list-style-type: none;
+}
+a {
+  text-decoration: none;
+ 
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Mixins
+@mixin border{
+  border: 2px solid $color1;
+  border-radius: 0.5rem;
+}
+@mixin nav {
+  .navitem{
+    display: flex;
+    #caret{
+        color:$hovercolor;
+        display: none;
+    }
+    .navlink{
+        color: $titlecolor;
+        white-space: none;
+        
+    &:hover {
+        color:$hovercolor ;
+     &:hover  #caret{
+            display:inline-flex;
+            flex-direction: row;
+        }  
+
+    }
+    &:active {
+        color:$activecolor;
+        &:active #caret{
+            color:$activecolor;   
+        }
+    }
+}
+}
+}
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin flex2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+@mixin flex3{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+}
+@mixin grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 0.1fr 0.5fr 1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas:  "nav nav"
+                        "myservices myservices"
+                        "works works"
+                        "skills skills"
+                        "contact contact"
+                        "footer footer";
+}

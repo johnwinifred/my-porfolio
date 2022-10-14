@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!-- things to do on this site
+1. add animation to the title on the services page
+2. the images should rotate the screen
+3. in the let's chat section there should be a popup (js)with a form that sends the message to my email
+4. 
+2. add media queries
+3. host with netlify
+4. make this a pwa
+5. make a loading page 
+6. make an error 404 page incase of no connection 
+-->
+<body> 
+  <section class="gridlayout">
+    <header class="header">
+        
+            
+            
+            
+      <nav class="nav">
+          
+          <ul class="navlist">
+              <h2 class="name">John <b>Winifred</b>
+              </h2>
+                  
+                  <li class="navitem">
+                      
+                      <a href="#myservices" class="navlink">
+                          <i id="caret" class="fa fa-caret-left" aria-hidden="true"> </i>
+                          Services
+                          <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i> 
+                          
+                      </a>
+                      
+                  </li>
+                  <li class="navitem">
+                      
+                      <a href="#works" class="navlink">
+                        <i id="caret" class="fa fa-caret-left" aria-hidden="true"></i>
+                        Works
+                        <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i> 
+                      </a>
+                  </li>
+                  <li class="navitem">
+                      
+                      <a href="#skills" class="navlink">
+                        <i id="caret" class="fa fa-caret-left" aria-hidden="true"></i>
+                        Skills
+                        <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i>
+                       </a>
+                  </li>
+                  <li class="navitem">
+                      
+                      <a href="#contact" class="navlink">
+                        <i id="caret" class="fa fa-caret-left" aria-hidden="true"></i>
+                        Contact
+                        <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i>
+                      </a>
+                  </li>
+            
+              <li class="navitem"><a href="https://twitter.com/WinneXia" class="font-awesome"><i class="fa fa-twitter"  style="color:#fff;" ></i>
+                </a>
+              </li>
+              <li class="navitem"><a href="https://github.com/johnwinifred/johnwinifred" class="font-awesome" ><i class="fa fa-github" style="color: #fff;"></i>
+                </a>
+              </li>
+              <li  class="navitem"><a href="mailto:winifredjohnchidera123@gmail.com" class="font-awesome special"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </a>
+              </li>
+          
+          </ul>
+     </nav>
+
+  
+      
+</header>
+
+
+<!-- Services -->
+<section id="myservices">
+<!-- title -->
+<div class="gridcontainer">
+  <div class="title">
+    <button class="btntext">Front-End Developer</button>
+    <h1>Talk is Cheap...
+      <br> Show me the code <br/>
+    </h1>
+    <p>I implement beautiful UI designs into code,
+      <br>and I love what I do <br/>
+    </p>
+     <li><a href="" class="link">LET'S CHAT!</a></li>
+  
+  </div>
+  <!-- image -->
+  <div class="image">
+    
+  <span class="bigcircle">
+    <img class="css" src="css.png" alt="">
+    <img class="react" src="react.png" alt="">
+    <img class="js" src="js.png" alt="">
+    <img class="userpics" src="user.png" alt=""> 
+    
+  </span>
+    <span class="smallcircle"></span>
+    <span class="dot"></span>
+  
+  </div>
+  
+</div>
+</section>
+
+<!-- works -->
+<section id="works">
+  <!-- This is the text section of the works page -->
+<div class="textcontainer">
+  <div class="borderitem">  <!--this div wraps the items surrounded by border-->
+     <div class="frontend">
+      <h1>Front-End 
+        <span class="sm-icons"> < / > </span>
+      </h1>
+      <p>I build responsive websites with awesome UI</p>
+     </div>
+     <div class="documentation">
+      <h1>Documentation
+        <span class="sm-icons"> < / > </span>
+      </h1>
+      <p>Create useful and easy guide for end users </p>
+     </div>
+     <div class="seo">
+      <h1>SEO
+        <span class="sm-icons"> < / > </span>
+      </h1>
+      <p>Boost your website with SEO</p>
+     </div>
+  </div>
+  <div class="textitem">
+    <h3>Introduction</h3>
+    <h1>Hello World!! <span>I'm John Winifred</span></h1>
+    <blockquote> <b>"</b> Show me the code and I will find a way to do it better... <br> I WORK SMART NOT HARD <b>"</b><br/></blockquote>
+    <h3>I started my tech journey 2 years ago as a self-taught developer and freelancer.
+       Tech has taught me patience, consistency and team work.
+      My super-power in tech is Learning. I am thrilled by challenges
+       and I love finding the best methods.
+        I am open to work with you. 
+    </h3>
+  </div>  <!--this div wraps the text column-->
+</div>
+<!-- this is teh sample container showing my projects -->
+<div class="samplecontainer">
+  <!-- maybe use js later -->
+  <div class="work1">
+    <h1>Latest Works</h1>
+    <p>Bringing you real life solutions</p>
+    <div class="w1">
+      <h2> Aimm.</h2>
+      <img src="" alt="">
+    </div>
+    <h3 class="link">
+      <li><a href="https://hashnode.com/@Winne123">ALL ARTICLES</a></li>
+    </h3>
+    <p>Click the link above to read the article.
+     </p>
+  </div> <!--this div wraps the items both text and image in the first work-->
+  <div class="work2">
+    <div class="w1">
+       <h2>Organics</h2> 
+      <img src="" alt="">
+    </div>
+    <div class="w1">
+      <h2>pwa</h2>
+      <img src="" alt="">
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<!-- skills -->
+<section id="skills">
+  <h2>Skills</h2>
+<div class="container">
+ 
+  <div class="htmlcontainer">
+    <h2>HTML5</h2>
+    <div class="barcontainer">
+      <div class="bar">
+        <b>80%</b>
+      </div>
+    </div>
+    
+  </div>
+  <div class="csscontainer">
+    <h2>CSS3</h2>
+    <div class="barcontainer2">
+      <div class="bar2">
+        <b>80%</b>
+      </div>
+    </div>
+    
+  </div>
+  <div class="jscontainer">
+    <h2>JAVASCRIPT</h2>
+    <div class="barcontainer3">
+      <div class="bar3">
+        <b>50%</b>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</section>
+
+<!-- contact -->
+    <section id="contact">
+      <div class="contactwrap">
+        <div class="note">
+         <h2>Let's make something amazing  <br>together. <br/>
+         </h2>
+          <h2>Start by <a class="link" href="https://www.linkedin.com/in/john-chidera-584731205">saying hi</a></h2>
+          
+        </div>
+        <div class="info">
+         <h4>Information</h4>
+         <p> Uyo, Nigeria</p>
+         <h2>hello@winne.io</h2>
+         <div class="navbar">
+           <nav class="nav">
+             
+             <ul class="navlist">
+                     
+                     <li class="navitem">
+                         
+                         <a href="#myservices" class="navlink">
+                             <i id="caret" class="fa fa-caret-left" aria-hidden="true"> </i>
+                             Services
+                             <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i> 
+                             
+                         </a>
+                         
+                     </li>
+                     <li class="navitem">
+                         
+                         <a href="#works" class="navlink">
+                           <i id="caret" class="fa fa-caret-left" aria-hidden="true"></i>
+                           Works
+                           <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i> 
+                         </a>
+                     </li>
+                     <li class="navitem">
+                         
+                         <a href="#skills" class="navlink">
+                           <i id="caret" class="fa fa-caret-left" aria-hidden="true"></i>
+                           Skills
+                           <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i>
+                          </a>
+                     </li>
+                     <li class="navitem">
+                         
+                         <a href="#contact" class="navlink">
+                           <i id="caret" class="fa fa-caret-left" aria-hidden="true"></i>
+                           Contact
+                           <i id="caret" class=" fa fa-caret-right" aria-hidden="true"></i>
+                         </a>
+                     </li>
+                 </ul>
+             </nav>
+         </div>
+         
+        </div>
+       </div>
+
+    </section>
+    <!-- for the footer-->
+    <section class="footer">
+      
+       
+        <div class="foot">
+          <h2 class="name">John <b>Winifred</b>
+          </h2>
+          <h6>@2022. All Rights Reserved</h6>
+        </div>
+        <div class="foot2">
+          <li class="navitem"><a href="https://twitter.com/WinneXia" class="font-awesome"><i class="fa fa-twitter"  style="color:#fff;" ></i>
+          </a>
+        </li>
+        <li class="navitem"><a href="https://github.com/johnwinifred/johnwinifred" class="font-awesome" ><i class="fa fa-github" style="color: #fff;"></i>
+          </a>
+        </li>
+        <li  class="navitem"><a href="mailto:winifredjohnchidera123@gmail.com" class="font-awesome special"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+        </li>
+        </div>
+       
+    </section>
+
+  </section>  
+</body>
+</html>

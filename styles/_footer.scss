@@ -1,0 +1,25 @@
+.footer{
+    grid-area:footer;
+    background-color: $color2;
+    width: 100%;
+    @include flex();
+    
+    
+        .foot{
+            @include flex();
+            h6{
+                padding-left:20px;
+            }  
+        
+    }
+.foot2{
+    width: 25%;
+        display: flex; 
+        flex-direction: row;
+        li{
+            a{
+                padding: 5px;
+            }
+        }
+    }
+}

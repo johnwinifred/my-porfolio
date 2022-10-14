@@ -1,0 +1,155 @@
+.nav{
+    height: $headerheight;
+ .navlist{
+   @include flex();
+   width: 75%;
+   .name p{
+    float: left;
+   }
+   .navitem{
+    display: flex;
+    #caret{
+        color:$hovercolor;
+        display: none;
+    }
+    .navlink{
+        color: $titlecolor;
+        white-space: none;
+    &:hover {
+        color:$hovercolor ;
+     &:hover  #caret{
+            display:inline-flex;
+        }  
+
+    }
+    &:active {
+        color:$activecolor;
+        &:active #caret{
+            color:$activecolor;   
+        }
+    }
+    }
+    .font-awesome{
+       padding: auto;
+       font-size:$normal_fontsize ;
+       position: relative;
+       left: 70px;
+       &:hover{
+        background-color: $hovercolor;
+        &:last-child{
+            color: $activecolor;
+        }
+
+       }
+    
+       
+    }
+    .special{
+        border: 2px solid #333438;
+        border-radius: 50%;
+        padding: 10px;
+        background-color:#333438;
+        color: gold;
+       }
+   }
+}
+
+}
+.link{
+    
+    color:$secondarycolor;
+    text-decoration: underline;
+    &:hover{
+        color:$activecolor;
+    }
+}
+// the buttons
+.btntext{
+    background-color:$secondarycolor;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+// shapes on background
+.bigcircle{
+ height: $bigh;
+ width: $bigw;
+ border-radius: 50%;
+
+ background-image: linear-gradient(to right bottom, #28292d, #28292d, #292a2d, #292a2e, #292a2e, #292a2e, #292a2e, #292a2e, #292a2e, #292a2d, #292a2d, #292a2c);
+ border: 2px solid $color2;
+}
+.smallcircle{
+    height: $smallh;
+    width: $smallw;
+    border-radius: 50%;
+    background-color:$color2;
+    border: 2px solid $color2 ;
+    position: absolute;
+    top:5rem;
+   }
+   .dot{
+    height: $doth;
+    width: $dotw;
+    border-radius: 50%;
+    background-color:$accent;
+    border: 2px solid $secondarycolor;
+    position: absolute;
+    top: 25rem;
+    right: 5rem;
+    margin-left: 40px;
+    background-color:$secondarycolor;
+   }
+//    images
+.css{
+    position: relative;
+    top: 0;
+    left: 20rem;
+}
+.js{
+    position: relative;
+    left: 10rem;
+    top:15rem;
+}
+.react{
+position: relative;
+right:10rem;
+top: 10rem;
+}
+.userpics{
+    position:relative;
+    left: 6rem;
+    top: 0.5rem;
+    border:2px solid gold;
+    border-radius: 50%;
+    padding: 5px;
+    border-top-style:none ;
+    border-left-style: none;
+    border-right-style: none;
+
+}
+
+// borderitems
+.borderitem{
+    .frontend ,
+    .documentation,
+    .seo{
+        @include border();
+        background-color: $color1;
+        margin-bottom: 20px;
+        padding: 1rem 3rem;
+    }
+    h1:first-child{
+       color: $secondarycolor;
+    }
+    
+}
+// small icons beside text
+.sm-icons{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom:1.5rem;
+}
+
+

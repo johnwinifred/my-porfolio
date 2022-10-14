@@ -1,0 +1,83 @@
+#skills{
+    @include flex2();
+    padding: 20px;
+    background-color:$color1;
+    grid-area: skills;
+
+    .container {
+         width: 100%;
+           .htmlcontainer{
+            @include flex();
+             width: 70%;
+            .barcontainer{
+               background-color: #fff;
+                width:50%;
+                border-radius:30px;
+        
+                .bar{
+                    background-color: $secondarycolor;
+                    width:80%;
+                   border:2px solid $secondarycolor ;
+                   border-radius: 30px;
+                  b{
+                       color: black;
+                      position: relative;
+                 left: 50%;
+                     }
+        
+               }
+             }
+           
+        }
+        .csscontainer{
+            @include flex();
+            width: 70%;
+             .barcontainer2{
+                background-color: #fff;
+               width:50%;
+               border-radius:30px;
+        
+                .bar2{
+                    background-color: $secondarycolor;
+                     width:80%;
+                   border:2px solid $secondarycolor ;
+                   border-radius: 30px;
+                    b{
+                        color: black;
+                         position: relative;
+                        left: 50%;
+                    }
+        
+                }
+           }
+           
+         }
+        
+        .jscontainer{
+            @include flex();
+           width: 70%;
+           margin-left: 10px;
+            .barcontainer3{
+               background-color: #fff;
+               width:50%;
+               border-radius:30px;
+        
+                .bar3{
+                    background-color: $secondarycolor;
+                     width:50%;
+                    border:2px solid $secondarycolor ;
+                    border-radius: 30px;
+                    b{
+                        color: black;
+                        position: relative;
+                         left: 50%;
+                   }
+        
+               }
+            }
+           
+     
+    } 
+     }
+    }
+ 
